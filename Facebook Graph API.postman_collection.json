@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "aa1d2a9d-d2cd-4788-aa77-985dc177de9f",
+		"name": "Facebook Graph API",
+		"description": "Source Code: [https://github.com/imvickykumar999/Facebook-Graph-API](https://github.com/imvickykumar999/Facebook-Graph-API)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14965750"
+	},
+	"item": [
+		{
+			"name": "Me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.facebook.com/v20.0/me?fields=id,name&access_token={{access_token}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v20.0",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						},
+						{
+							"key": "access_token",
+							"value": "{{access_token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Video ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.facebook.com/v20.0/757963361686491?fields=id,title,description,source&access_token={{access_token}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v20.0",
+						"757963361686491"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,title,description,source"
+						},
+						{
+							"key": "access_token",
+							"value": "{{access_token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Permissions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.facebook.com/v20.0/me/permissions?access_token={{access_token}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v20.0",
+						"me",
+						"permissions"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "{{access_token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Uploaded Videos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.facebook.com/v20.0/me/videos/uploaded?fields=id,title,description,source&access_token={{access_token}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v20.0",
+						"me",
+						"videos",
+						"uploaded"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,title,description,source"
+						},
+						{
+							"key": "access_token",
+							"value": "{{access_token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": "**********"
+		}
+	]
+}
